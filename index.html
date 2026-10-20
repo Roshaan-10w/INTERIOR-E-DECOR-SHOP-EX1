@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Decor e-Shop</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f1e7;
+            color: #3e3027;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #604735;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #ddc6aa;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #3e3027;
+            margin: 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fffaf4;
+            border-radius: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .gallery figure {
+            margin: 0;
+            padding: 10px;
+            background-color: #f1e4d4;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        figcaption {
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #8b735b;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ddc6aa;
+        }
+
+        footer {
+            background-color: #604735;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 650px) {
+            .gallery {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- Section 1: Header -->
+    <header>
+        <h1>Interior Decor e-Shop</h1>
+        <p>Transform Your House into a Beautiful Home!</p>
+    </header>
+
+    <!-- Section 2: Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Section 3: Home -->
+    <div class="section" id="home">
+        <h2>Welcome to Our Store</h2>
+        <p>
+            Welcome to Interior Decor e-Shop, your destination
+            for elegant and affordable home decoration products.
+        </p>
+        <p>
+            Explore furniture, lighting, bedroom designs and
+            decorative accessories to create your dream home.
+        </p>
+
+        <h3>Our Inspiration</h3>
+        <p>Discover ideas to make every corner of your home beautiful.</p>
+        <a href="#gallery">Explore Our Gallery</a>
+    </div>
+
+    <!-- Section 4: Image Gallery -->
+    <div class="section" id="gallery">
+        <h2>Interior Inspiration Gallery</h2>
+
+        <div class="gallery">
+            <figure>
+                <img src="images/living-room.jpeg"
+                     alt="Elegant living room">
+                <figcaption>Elegant Living Room</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/sofa.jpeg"
+                     alt="Modern sofa">
+                <figcaption>Modern Sofas</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/table.jpeg"
+                     alt="Wooden coffee table">
+                <figcaption>Wooden Furniture</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/lamp.jpeg"
+                     alt="Decorative lamp">
+                <figcaption>Stylish Lighting</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/wall-art.jpeg"
+                     alt="Decorative wall art">
+                <figcaption>Wall Decorations</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/bedroom.jpeg"
+                     alt="Modern bedroom">
+                <figcaption>Bedroom Designs</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- Section 5: Products Table -->
+    <div class="section" id="products">
+        <h2>Featured Products</h2>
+
+        <table>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Price (INR)</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Wooden Coffee Table</td>
+                <td>Furniture</td>
+                <td>4500</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Decorative Table Lamp</td>
+                <td>Lighting</td>
+                <td>1800</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Wall Art Frame</td>
+                <td>Wall Decor</td>
+                <td>1200</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Section 6: Product Categories -->
+    <div class="section" id="categories">
+        <h2>Product Categories</h2>
+
+        <h3>Available Categories</h3>
+        <ul>
+            <li>Furniture
+                <ul>
+                    <li>Sofas</li>
+                    <li>Tables</li>
+                    <li>Chairs</li>
+                </ul>
+            </li>
+            <li>Home Accessories
+                <ul>
+                    <li>Vases</li>
+                    <li>Wall Clocks</li>
+                    <li>Decorative Mirrors</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>How to Shop</h3>
+        <ol>
+            <li>Choose a product
+                <ol>
+                    <li>Explore the categories</li>
+                    <li>Compare the prices</li>
+                </ol>
+            </li>
+            <li>Contact our store</li>
+            <li>Confirm your order</li>
+        </ol>
+
+        <h3>Product Information</h3>
+        <dl>
+            <dt><strong>Furniture</strong></dt>
+            <dd>Functional and stylish items for your home.</dd>
+
+            <dt><strong>Lighting</strong></dt>
+            <dd>Lamps that create a warm atmosphere.</dd>
+
+            <dt><strong>Wall Decor</strong></dt>
+            <dd>Artworks and accessories for your walls.</dd>
+        </dl>
+
+        <a href="#top">Back to Top</a>
+    </div>
+
+    <!-- Section 7: Contact -->
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions about our products? Contact us!</p>
+
+        <p>
+            Email:
+            <a href="mailto:info@interiordecor.example">
+                info@interiordecor.example
+            </a>
+        </p>
+
+        <p>
+            Phone:
+            <a href="tel:+919876543210">+91 98765 43210</a>
+        </p>
+    </div>
+
+    <!-- Section 8: Footer -->
+    <footer>
+        <p>&copy; 2026 Interior Decor e-Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
